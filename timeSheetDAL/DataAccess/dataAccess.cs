@@ -1,20 +1,22 @@
 ﻿using System;
+using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
-using System.Configuration;
+
 namespace timeSheetDAL.DataAccess
 {
-    class dataAccess
+    internal class dataAccess
     {
         internal SqlConnection _con = new SqlConnection();
         internal SqlCommand cmd = new SqlCommand();
+
         public SqlConnection Getconnection()
         {
             try
             {
                 if (_con.State == ConnectionState.Closed)
                 {
-                    _con.ConnectionString =  ConfigurationManager.ConnectionStrings["connDataAccess"].ToString();
+                    _con.ConnectionString = ConfigurationManager.ConnectionStrings["connDataAccess"].ToString();
                     _con.Open();
                 }
             }
@@ -25,6 +27,7 @@ namespace timeSheetDAL.DataAccess
             }
             return _con;
         }
+
         public DataTable timeSheetDALTbl(string str, SqlCommand cmd)
         {
             try
@@ -51,9 +54,8 @@ namespace timeSheetDAL.DataAccess
                     _con.Close();
                 }
             }
-
-
         }
+
         public DataSet timeSheetDALDs(string str, SqlCommand cmd)
         {
             try
@@ -73,7 +75,6 @@ namespace timeSheetDAL.DataAccess
             {
                 String msgInnerExAndStackTrace = String.Format("{0}; Inner Ex: {1}; Stack Trace: {2}", ex.Message, ex.InnerException, ex.StackTrace);
                 return null;
-
             }
             finally
             {
@@ -82,7 +83,6 @@ namespace timeSheetDAL.DataAccess
                     _con.Close();
                 }
             }
-
         }
     }
 }

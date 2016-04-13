@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.Serialization;
+﻿using System.Runtime.Serialization;
 using System.ServiceModel;
-using System.ServiceModel.Web;
-using System.Text;
 
 namespace timeSheetService
 {
@@ -12,7 +7,6 @@ namespace timeSheetService
     [ServiceContract]
     public interface ItimeSheetService
     {
-
         [OperationContract]
         string GetData(int value);
 
@@ -22,13 +16,12 @@ namespace timeSheetService
         // TODO: Add your service operations here
     }
 
-
     // Use a data contract as illustrated in the sample below to add composite types to service operations.
     [DataContract]
     public class CompositeType
     {
-        bool boolValue = true;
-        string stringValue = "Hello ";
+        private bool boolValue = true;
+        private string stringValue = "Hello ";
 
         [DataMember]
         public bool BoolValue
