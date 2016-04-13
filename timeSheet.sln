@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "timeSheet", "timeSheet\timeSheet.csproj", "{50C98B86-E67D-450A-8FD2-C6790C5A74C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "timeSheetService", "timeSheetService\timeSheetService.csproj", "{4F5F4ADC-127A-41E5-9B69-940F3AE7E2EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "timeSheetDAL", "timeSheetDAL\timeSheetDAL.csproj", "{00B5E7BE-826B-40B3-B9C5-13DC479B6F80}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{50C98B86-E67D-450A-8FD2-C6790C5A74C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50C98B86-E67D-450A-8FD2-C6790C5A74C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50C98B86-E67D-450A-8FD2-C6790C5A74C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50C98B86-E67D-450A-8FD2-C6790C5A74C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F5F4ADC-127A-41E5-9B69-940F3AE7E2EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F5F4ADC-127A-41E5-9B69-940F3AE7E2EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F5F4ADC-127A-41E5-9B69-940F3AE7E2EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F5F4ADC-127A-41E5-9B69-940F3AE7E2EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00B5E7BE-826B-40B3-B9C5-13DC479B6F80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00B5E7BE-826B-40B3-B9C5-13DC479B6F80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00B5E7BE-826B-40B3-B9C5-13DC479B6F80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00B5E7BE-826B-40B3-B9C5-13DC479B6F80}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
