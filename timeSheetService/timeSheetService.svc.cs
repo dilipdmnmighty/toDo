@@ -1,4 +1,5 @@
 ﻿using System;
+using timeSheetService.dataContracts;
 
 namespace timeSheetService
 {
@@ -6,22 +7,13 @@ namespace timeSheetService
     // NOTE: In order to launch WCF Test Client for testing this service, please select Service1.svc or Service1.svc.cs at the Solution Explorer and start debugging.
     public class timeSheetService : ItimeSheetService
     {
-        public string GetData(int value)
+        public contractGetDate getDate()
         {
-            return string.Format("You entered: {0}", value);
-        }
+            contractGetDate SD = new contractGetDate();
+            SD.DateValue = DateTime.Now.ToString();
+            return SD;
+        } 
 
-        public CompositeType GetDataUsingDataContract(CompositeType composite)
-        {
-            if (composite == null)
-            {
-                throw new ArgumentNullException("composite");
-            }
-            if (composite.BoolValue)
-            {
-                composite.StringValue += "Suffix";
-            }
-            return composite;
-        }
+        
     }
 }
